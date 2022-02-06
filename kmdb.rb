@@ -70,12 +70,94 @@
 # Use `Model.destroy_all` code.
 # TODO!
 
+# **************************
+# Don't change or move
+Movie.destroy_all
+Person.destroy_all
+Role.destroy_all
+# **************************
+
 # Generate models and tables, according to the domain model
 # TODO!
 
 # Insert data into your database that reflects the sample data shown above
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+movie1 = Movie.new
+movie1.title = "Batman Begins"
+movie1.year_released = "2005" 
+movie1.rated = "PG-13"
+movie1.person_id = "1"
+movie1.save
+
+movie2 = Movie.new
+movie2.title = "The Dark Knight"
+movie2.year_released = "2008" 
+movie2.rated = "PG-13"
+movie2.person_id = "1"
+movie2.save
+
+movie3 = Movie.new
+movie3.title = "The Dark Knight Rises"
+movie3.year_released = "2012" 
+movie3.rated = "PG-13"
+movie3.person_id = "1"
+movie3.save
+
+person1 = Person.new
+person1.name = "Christopher Nolan"
+person1.save
+
+person2 = Person.new
+person2.name = "Christian Bale"
+person2.save
+
+person3 = Person.new
+person3.name = "Michael Caine"
+person3.save
+
+person4 = Person.new
+person4.name = "Liam Neeson"
+person4.save
+
+person5 = Person.new
+person5.name = "Katie Holmes"
+person5.save
+
+person6 = Person.new
+person6.name = "Gary Oldman"
+person6.save
+
+person7 = Person.new
+person7.name = "Heath Ledger"
+person7.save
+
+person8 = Person.new
+person8.name = "Aaron Eckhart"
+person8.save
+
+person9 = Person.new
+person9.name = "Maggie Gyllenhaal"
+person9.save
+
+person10 = Person.new
+person10.name = "Tom Hardy"
+person10.save
+
+person11 = Person.new
+person11.name = "Joseph Gordon-Levitt"
+person11.save
+
+person12 = Person.new
+person12.name = "Anne Hathaway"
+person12.save
+
+puts "There are #{Person.all.count} people"
+
+
+puts "There are #{Movie.all.count} movies"
+
 
 # Prints a header for the movies output
 puts "Movies"
