@@ -153,10 +153,103 @@ person12 = Person.new
 person12.name = "Anne Hathaway"
 person12.save
 
+role1 = Role.new
+role1.movie_id = "1"
+role1.person_id = "2"
+role1.character_name = "Bruce Wayne"
+role1.save
+
+role2 = Role.new
+role2.movie_id = "1"
+role2.person_id = "3"
+role2.character_name = "Alfred"
+role2.save
+
+role3 = Role.new
+role3.movie_id = "1"
+role3.person_id = "4"
+role3.character_name = "Ra's Al Ghul"
+role3.save
+
+role4 = Role.new
+role4.movie_id = "1"
+role4.person_id = "5"
+role4.character_name = "Rachel Dawes"
+role4.save
+
+role5 = Role.new
+role5.movie_id = "1"
+role5.person_id = "6"
+role5.character_name = "Commissioner Gordon"
+role5.save
+
+role6 = Role.new
+role6.movie_id = "2"
+role6.person_id = "2"
+role6.character_name = "Bruce Wayne"
+role6.save
+
+role7 = Role.new
+role7.movie_id = "2"
+role7.person_id = "7"
+role7.character_name = "Joker"
+role7.save
+
+role8 = Role.new
+role8.movie_id = "2"
+role8.person_id = "8"
+role8.character_name = "Harvey Dent"
+role8.save
+
+role9 = Role.new
+role9.movie_id = "2"
+role9.person_id = "3"
+role9.character_name = "Alfred"
+role9.save
+
+role10 = Role.new
+role10.movie_id = "2"
+role10.person_id = "9"
+role10.character_name = "Rachel Dawes"
+role10.save
+
+role11 = Role.new
+role11.movie_id = "3"
+role11.person_id = "2"
+role11.character_name = "Bruce Wayne"
+role11.save
+
+role12 = Role.new
+role12.movie_id = "3"
+role12.person_id = "6"
+role12.character_name = "Commissioner Gordon"
+role12.save
+
+role13 = Role.new
+role13.movie_id = "3"
+role13.person_id = "10"
+role13.character_name = "Bane"
+role13.save
+
+role14 = Role.new
+role14.movie_id = "3"
+role14.person_id = "11"
+role14.character_name = "John Blake"
+role14.save
+
+role15 = Role.new
+role15.movie_id = "3"
+role15.person_id = "12"
+role15.character_name = "Selina Kyle"
+role15.save
+
+
+
+
+#Confirming what's in the database
 puts "There are #{Person.all.count} people"
-
-
 puts "There are #{Movie.all.count} movies"
+puts "There are #{Role.all.count} roles"
 
 
 # Prints a header for the movies output
