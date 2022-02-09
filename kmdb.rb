@@ -258,6 +258,17 @@ puts ""
 # Query the movies data and loop through the results to display the movies output
 # TODO!
 
+# 1. Read from the array
+# 2. Construct a sentence that includes "Hi" and the value from step 1
+# 3. Display the sentence
+# 4. If this is the last element in the array, go to step 6
+# 5. Repeat (i.e. go back to step 1)
+# 6. End
+
+# for __________ in __________
+#     # code to repeat
+#   end
+
 all_movies = Movie.all
 directors = Person.where({ id: person1})
 
@@ -276,12 +287,37 @@ puts ""
 # Query the cast data and loop through the results to display the cast output for each movie
 # TODO!
 
-all_roles = Role.all
+batman1_cast = Role.where({movie_id: movie1})
+batman2_cast = Role.where({movie_id: movie2}) 
+batman3_cast = Role.where({movie_id: movie3}) 
 
-for movie in all_movies
-        for role in all_roles
-        puts "#{movie.title} #{role.person_id} #{role.character_name}"
-        end
+actor_name = Person.all
+
+for role in batman1_cast
+    for actor in actor_name
+    puts "#{movie1.title} #{role.character_name} #{person.name}"
 end
-    
+end
+
+for role in batman2_cast
+    puts " #{movie2.title} #{role.character_name}"
+end
+
+for role in batman3_cast
+    puts " #{movie3.title} #{role.character_name}"
+end
+
+# for movie in all_movies
+# for role in batman1_cast
+#             puts "#{movie.title} #{role.character_name}"
+# end
+# end
+
+
+# for movie in all_movies
+# for role in all_roles
+#     puts " #{movie1.title} #{role.character_name}"
+# end
+# end
+
 
