@@ -245,9 +245,9 @@ role15.save
 
 
 #Confirming what's in the database
-puts "There are #{Person.all.count} people"
-puts "There are #{Movie.all.count} movies"
-puts "There are #{Role.all.count} roles"
+    # puts "There are #{Person.all.count} people"
+    # puts "There are #{Movie.all.count} movies"
+    # puts "There are #{Role.all.count} roles"
 
 
 # Prints a header for the movies output
